@@ -1,0 +1,42 @@
+{% extends 'firstApp/base.html' %}
+{% block content %}
+{% load static %}
+
+
+   <div class="home-page"></div>
+   <div class="container">
+
+   </div>
+<div class="img-parent" >
+   <img src="{% static 'firstApp/images/scriptum.png' %}" alt="">
+</div>
+</div>
+<a class="covid19" href="{% url 'covid19' %}"><span class="material-icons covid-logo">coronavirus</span> See Covid-19 situation around the world</a>
+
+
+   
+{% if user.is_authenticated %}
+<a href="{% url 'courses' %}" class="dive-in btn btn1">Dive in</a>
+
+{% if messages %}
+{{message}}
+{% endif %}
+
+
+
+
+
+{% else %}
+   <a class="register-now" href="{% url 'register' %}">Register Now!</a>
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

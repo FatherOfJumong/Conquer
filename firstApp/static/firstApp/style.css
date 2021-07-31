@@ -1,0 +1,71 @@
+*{
+    font-family: cursive;
+}
+.container{
+    margin-top: 35px;
+    margin-left: 20px;
+    position: relative;
+
+}
+.container img{
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    position: relative;
+}
+
+.container .heading1{
+    position: absolute;
+    top: 7em;
+    left: 30px;
+    
+ 
+    
+    
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition-duration: 0.2s;
+
+}
+
+.heading:hover{
+    color: lightskyblue;
+
+}
+
+.Python-basics p{
+    position: absolute;
+    top: 15em;
+    left: 22em;
+    color: white;
+ 
+}
+
+.register-for-courses{
+    justify-content: center;
+    text-align: center;
+    
+    margin-top: 10%;
+
+}
+.register-for-courses img{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);   
+}
+
+.Python-basics:hover  {
+    padding-top: 10px;
+    transition-duration: 0.2s;
+}
+.Python-basics:hover .heading , .Python-basics:hover p  {
+    padding-top: 10px;
+    transition-duration: 0.3s;
+
+
+}

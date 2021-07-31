@@ -1,0 +1,523 @@
+   <div class="home-page"></div>
+   <div class="container">
+      <a href="#chapter1" class="dive-in btn btn1">Dive in</a>
+   </div>
+<div class="img-parent" >
+   <img src="{% static 'firstApp/images/newmainlogo.png' %}" alt="">
+</div>
+</div>
+
+
+
+<div id="start_to_learn">
+   <hr style="  border-top: 7px solid purple  ;">  
+   <h1 id="chapter1" class= 'chapter1'style="color: purple;" >Python, Chapter 1</h1>
+</div>
+
+
+
+
+pre {
+    display: block;
+    padding: 8.5px;
+    margin: 0 0 9px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family:cursive;
+
+}
+html{
+    scroll-behavior: smooth;
+    max-height: 100%;
+
+}
+
+body{
+    background-color: #fafafa;
+  
+}
+nav{
+    background-color: purple;
+    height: 80px;
+    width: 100%;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 70px;
+    font-weight: bold;
+    -webkit-transition: all 2s ease;
+    transition: all 1s ease;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav ul{
+    float:right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    -webkit-transition: all 2s ease;
+    transition: all 1s ease;
+
+}
+
+nav li:hover a{
+
+    background:white ;
+    transition:  .5s;
+    transition-property: margin-right;
+    text-decoration: none;
+
+}
+.dive-in{
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+
+.btn{
+ 
+    display: block;
+    font-size: 14px;
+    margin:30px 0;
+    text-decoration: none;
+    border: 2px solid purple;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+
+.btn::before{
+    background: purple;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+
+.btn:hover::before{
+    width: 100%;
+}
+
+
+.btn1::before{
+    height: 0;
+    width: 100%;
+    transform: translate(-50%, -50% ) rotate(45deg);
+
+}
+.btn1:hover::before{
+    height: 380%;
+
+}
+.dive-in{
+    color: purple;
+}
+.dive-in:hover{
+  color: white;
+}
+.logo{
+    -webkit-transition: all 2s ease;
+    transition: all 1s ease;
+}
+h1{
+    margin-bottom: 200%;
+}
+
+#my-gmail-label{
+    text-align: center;
+
+}
+
+#my-gmail{
+    text-align: center;
+}
+
+.contact-article{
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.img-parent img{
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+.code{
+    text-align: center;
+}
+.hello{
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+
+.submit-button{
+    color: purple;
+}
+
+.submit-button:hover{
+    background-color: purple;
+    color: white;
+}
+
+.submit-button{
+    background: none;
+    display: block;
+    font-size: 14px;
+    margin:30px 0;
+    text-decoration: none;
+    border: 2px solid purple;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.3s all ease;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-left: 50%;
+    cursor: pointer;
+
+}
+.signup-button:hover{
+    background-color: purple;
+    color: white;
+}
+
+.signup-button{
+    color: purple;
+    background: none;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    border: 2px solid purple;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.3s all ease;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    align-items: center;
+    width: 50%;
+}
+
+.registration-form .submit-button{
+    text-align: center;
+}
+
+
+input[type = text],[type=password],[type=email]{
+    border: none;
+    border-bottom:  2px solid purple;
+}
+
+input {
+    text-align: center;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: purple;
+  }
+  input:focus {
+    border-color: green;
+    text-align: center;
+    border-width: 0 0 1px;
+    transition: 0.3s;
+    border-color: green;
+    box-shadow: 0 0 15px purple;
+  }
+  form .login-form, .registration-form{
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+form .login-form, .registration-form input, button{
+margin: auto;
+}
+
+ .registration-form button{
+margin-bottom: 1em;
+    }
+    
+    
+
+
+
+.login-form form{
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.login-form input{
+    margin: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logout-form{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.log-in-again{
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    color: purple;
+    text-decoration: none;
+
+
+}
+
+
+.profile-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.profile-info p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+.register-now{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    font-size: xx-large;
+}
+
+
+
+
+table{
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 0;
+
+}
+#no-border{
+    border: none !important;
+}
+
+pre{
+   
+    font-weight: bold;
+    
+}
+
+
+
+pre.code {
+    white-space: pre-wrap;
+  }
+  pre.code::before {
+    counter-reset: listing;
+    color: purple;
+  }
+  pre.code code {
+    counter-increment: listing;
+    color: purple;
+  }
+  pre.code code::before {
+    content: counter(listing) ". ";
+    display: inline-block;
+    width: 2.5em;        
+    padding-left: auto; 
+    margin-left: auto;  
+    text-align: right;  
+  }
+
+
+
+
+  .covid_home_page{
+    position:absolute;
+    top:1em;
+    left: 3em;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+
+nav .alert{
+    z-index: 1;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+
+
+.alert-danger{
+    white-space: nowrap;
+    z-index: 1;
+    position: absolute;
+    top: 25em;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+#icon{
+    color: purple;
+}
+
+
+.u_form .submit-button{
+    margin-left: 70%;
+}
+
+.u_form{
+ 
+    z-index: 1;
+    top: 40%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-left: 2.5em;
+}
+
+.u_form{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+
+}
+.u_form label{
+    justify-content: center;
+    margin-right: 5.5em ;
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+#div_id_username small{
+    margin-right: 20%;
+
+}
+
+.u_form fieldset legend{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.update-button{
+    margin-left: 63.35%;
+
+}
+
+
+
+.media-body h2,p{
+    margin:auto;
+    text-align: center;
+}
